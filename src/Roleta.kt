@@ -16,7 +16,7 @@ fun main() {
 
         when (choice) {
             1 -> {
-                // Adivinhar o número
+
                 print("\nDigite seu palpite de número (1 a 36): ")
                 val userNumber = readLine()?.toIntOrNull()
                 if (userNumber != null && userNumber in 1..36) {
@@ -32,7 +32,7 @@ fun main() {
                 }
             }
             2 -> {
-                // Adivinhar a cor
+
                 print("\nDigite sua aposta de cor (Vermelho ou Preto): ")
                 val userColor = readLine()?.trim()?.lowercase(getDefault())
                 if (userColor == "vermelho" || userColor == "preto") {
@@ -54,7 +54,7 @@ fun main() {
             else -> println("Escolha inválida. Tente novamente.")
         }
 
-        // Perguntar se o jogador deseja jogar novamente
+
         if (playAgain) {
             print("\nQuer jogar novamente? (sim/não): ")
             val response = readLine()?.trim()?.lowercase(getDefault())
